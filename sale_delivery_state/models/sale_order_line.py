@@ -10,7 +10,7 @@ class SaleOrderLine(models.Model):
     skip_sale_delivery_state = fields.Boolean(
         string="Skip Delivery State",
         compute="_compute_skip_sale_delivery_state",
-        store=True,
+        store=False,
         readonly=False,
     )
 

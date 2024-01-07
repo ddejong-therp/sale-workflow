@@ -23,7 +23,7 @@ class SaleOrder(models.Model):
         # the method _compute_delivery_state already exist to compute
         # the field delivery_set
         compute="_compute_sale_delivery_state",
-        store=True,
+        store=False,
     )
 
     force_delivery_state = fields.Boolean(
